@@ -3,14 +3,22 @@ var add = function(a,b){
   var bunbo = a.bunbo;
   var answer = frac(bunshi, bunbo);
   return answer;
+};
+var frac = function(bunshi,bunbo){
+  var bunsu = {
+    bunshi: bunshi,
+    bunbo: bunbo
+};
+
+  return bunsu;
 
 };
+
 a = frac(1,3);
 b = frac(4,3);
 c = add(a,b);
-console.log(c);
 
-add(a,b)
+console.log(c);
 
 ーーーー
 
@@ -46,9 +54,6 @@ console.log(c);
 
 add(a,1);
 
-/*
-[object Object]
-*/
 
 ーーーー
 
@@ -56,9 +61,9 @@ var add = function(a,b){
   var bunshi = a.bunshi + b.bunshi;
   var bunbo = a.bunbo;
 
-  if(Number.isInteger(b)){
+  if(Number.isInteger(a)){
 
-  b = frac(b,1);
+  a = frac(a,1);
 
   }
 
@@ -77,12 +82,12 @@ var add = function(a,b){
 
 };
 
-a = frac(2,3);
-b = frac(b,1);
-c = add(4,a);
+a = frac(a,1);
+b = frac(2,3);
+c = add(4,b);
 console.log(c);
 
-add(4,a);
+add(4,b);
 
 
 /*
