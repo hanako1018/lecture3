@@ -133,10 +133,9 @@ var add = function(a,b){
 
 };
 
-a = frac(4,5);
-b = frac(3,7);
-c = frac(3,5)
-d = add(a,c);
-console.log(d);
+a = frac(a,1);
+b = frac(b,1);
+c = add(a,b);
+console.log(c);
 
 add(1, 2);
