@@ -100,7 +100,7 @@ var multiply = function(a,b){
 
   if(Number.isInteger(b)){
 
-  b = frac(b,1);
+  b = frac(b,0);
 
   }
 
@@ -120,7 +120,7 @@ var multiply = function(a,b){
 };
 
 a = frac(1,4);
-b = frac(b,1);
+b = frac(b,0);
 c = multiply(a,0);
 console.log(c);
 
